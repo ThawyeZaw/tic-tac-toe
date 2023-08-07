@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tic-Tac-Toe</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="box">
+				<h1>Choose</h1>
+				<div class="choose">
+					<div onclick="chooseYourPlayer('x')">X</div>
+					<div onclick="chooseYourPlayer('o')">O</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="board">
+				<button class="cell"></button>
+				<button class="cell"></button>
+				<button class="cell"></button>
+				<button class="cell"></button>
+				<button class="cell"></button>
+				<button class="cell"></button>
+				<button class="cell"></button>
+				<button class="cell"></button>
+				<button class="cell"></button>
+			</div>
+			<div class="doc">
+				<p><span>X</span>'s turn</p>
+				<button onclick="restart()"><a href="">restart</a></button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

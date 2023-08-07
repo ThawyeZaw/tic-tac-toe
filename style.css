@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+	background: #0af;
+}
+
+.container {
+	position: relative;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.board {
+  margin: 1em;
+	width: clamp(300px, 50vmax, 500px);
+	aspect-ratio: 1 / 1;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cell{
+	background: none;
+	aspect-ratio: 1 / 1;
+	border: 3px solid #fff;
+	min-width: 33%;
+	text-transform: uppercase;
+	display: grid;
+	place-items: center;
+	color: #fff;
+	font-size: clamp(60px, 13vmax, 130px);
+}
+
+
+.h{
+	color: #fff0;
+}
+.h:hover{
+	color: #fff8;
+}
+
+.wrapper{
+	z-index: 9;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: #fff8;
+	display: grid;
+	place-items: center;
+}
+
+.box{
+	background: #fff;
+	width: 300px;
+	aspect-ratio: 1 / 1;
+	text-align: center;
+}
+
+.box > h2{
+	padding: 0.6em 0;
+}
+
+.choose{
+	display: flex;
+	width: 100%;
+	height: 70%;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.choose > *{
+	width: 30%;
+	border: 1px solid #000;
+	aspect-ratio: 1 / 1;
+	border-radius: 5px;
+	font-size: 5em;
+	font-weight: bolder;
+}
+
+.choose > *:hover{
+	background: #0001;
+}
+
+.doc{
+	text-align: center;
+}
+
+.doc > p{
+	font-size: 4.4em;
+}
+
+.doc span{
+	text-transform: uppercase;
+} 
+
+.doc button{
+	background: none;
+	outline: none;
+	border: none;
+	font-size: 1.6em;
+}
